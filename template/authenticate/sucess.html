@@ -1,0 +1,119 @@
+{% load static %}
+{% static "img" as img %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>Bootstarp Login Success Page templates | login success templates | animated login success template</title>
+<meta name="keywords" content="login sucess animate template | html and css login templates | login successful template"  />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style>
+    body
+    {
+        font-family: 'Roboto Slab', serif;
+        margin:0px;
+        padding:0px;
+    }
+
+    .success_container
+    {
+        width:400px;
+        padding:120px 100px;
+        -webkit-box-shadow: 0px 0px 25px 0px rgba(209,209,209,1);
+        -moz-box-shadow: 0px 0px 25px 0px rgba(209,209,209,1);
+        box-shadow: 0px 0px 25px 0px rgba(209,209,209,1);
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+
+    .ic_schauhan
+    {
+    width:50px;
+    height:50px;
+    line-height:50px;
+    background:#090;
+    text-align:center;
+    margin:0px auto;
+    border-radius:100%;
+    
+    }
+
+    .ic_schauhan i
+    {
+        color:#fff;
+        text-align:center;
+        height:50px;
+        font-size:25px;
+        line-height:50px;
+        animation: txt 2s infinite alternate;
+        }
+
+    @keyframes txt { 0%{ font-size:15px; } 50%{ font-size:25px; } 100%{ font-size:15px; } }
+
+    .success_container p
+    {
+        text-align:center;
+        font-weight:600;
+        margin:10px;
+        font-size:20px;
+        padding:0px;
+        color:#0C0;
+        animation: blink 1s steps(5, start) infinite;
+        -webkit-animation: blink 1s steps(5, start) infinite;
+    }
+
+
+    @keyframes blink { 0%{ color:#0C0; } 100%{ color:green; } }
+
+    .line
+    {
+        width:100%;
+        height:6px;
+        background:#090;
+        position:absolute;
+        left:0;
+        bottom:0;
+        animation: line 2s infinite alternate;
+    }
+
+    @keyframes line { 0%{width:0%; background:#0F0; } 100%{ width:100%; background:#030; } }
+
+
+    @media only screen and (max-width: 767px) 
+    {
+        .success_container
+    {
+        width:100%;
+        padding:120px 100px;
+        box-shadow:none;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    }
+</style>
+</head>
+
+<body>
+   
+   <div class="success_container">
+     <div class="ic_schauhan">
+        <i class="fa fa-check" aria-hidden="true"></i>
+     </div>
+     <br>
+     <p>SUCCESSFULLY VOTED</p>
+     <div class="line"></div>
+     <div class="text-center">
+      <a class="btn btn-success" href="{% url 'home' %}" role="button">HOME →</a>
+    </div>
+   </div>
+</body>
+</html>
