@@ -139,16 +139,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'manager.CustomUser'
 
 
-ACCOUNT_SID='ACff9fb906d2a5545da05520203dfaf191'
-AUTH_TOKEN='78d98c5b0fe76517fb1848ce1d15a467'
+ACCOUNT_SID='ACff9fb906d2a5545d20203dfaf191'
+AUTH_TOKEN='78d98c576517fb1848ce1d15a467'
 COUNTRY_CODE='+91'
-TWILIO_WHATSAPP_NUMBER='whatsapp:+14155238886'
-TWILIO_PHONE_NUMBER='+12138164540'
+TWILIO_WHATSAPP_NUMBER='whatsapp:+14158886'
+TWILIO_PHONE_NUMBER='+121381645'
 
 
 EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = '184502@sasi.edu.in' # this email will be used to send emails
-EMAIL_HOST_PASSWORD = 'Sasi@0007' # host email password required
+EMAIL_HOST_USER = '184512@sasi.edu.in' # this email will be used to send emails
+EMAIL_HOST_PASSWORD = 'Sasi@007' # host email password required
